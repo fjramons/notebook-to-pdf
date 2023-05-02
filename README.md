@@ -26,19 +26,21 @@ Where:
 
 #### Use after installation (recommended)
 
-For simpler of use, a convenience alias can be installed at `.bashrc` by:
+For simpler use, a convenience alias can be installed at `.bashrc` by:
 
 ```bash
 ./scripts/install-nb2pdf.sh
 ```
 
-This will allow running the container as if it where a regular command line tool:
+This alias will allow running the container as if it where a regular command line tool:
 
 ```bash
 nb2pdf source_notebook.ipynb metadata.yaml destination_notebook.ipynb
 ```
 
-**NOTE:** The alias mounts the current dir (regardless the current location) as the container's workdir and exiting whenever finishes. Alternatively, for a temporary use, you can also load the alias by running `source ./scripts/source-alias.sh`
+**NOTE:** The alias mounts the current dir (regardless the current location) as the container's workdir and exits whenever finishes.
+
+Alternatively, for a temporary use, you can also load the alias by running `source ./scripts/source-alias.sh`
 
 ### As Python script
 
